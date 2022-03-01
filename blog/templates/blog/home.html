@@ -1,0 +1,65 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<div class="entry">
+    <div class="about" id="about">
+        <div class="w-container">
+            <h2 class="about-header">О нас</h2>
+            <p class="about-text">Компания ООО «Ремстецтехника» — это сервисная компания с опытом работы более 30 лет. Мы специализируемся на ремонте и восстановлении гидравлических систем спецтехники и других агрегатов, осуществляем сварочные и токарные работы.</p>
+            <h3>Наши преимущества</h3>
+            <ul>
+                <li>Широкий спектр оборудования позволяет выполнять полный цикл ремонта в короткие сроки.</li>
+                <li>Специалисты компании имеют многолетний опыт работы с гидравликой, знают многие нюансы и тонкости эксплуатации гидросистем.</li>
+                <li>Выездная диагностика и ремонт для выявления неисправностей на месте базирования техники, что позволяет уменьшить издержки заказчика и сократить время ремонта.</li>
+                <li>Многолетние связи с другими предприятиями края и России для обмена опытом и решения самых сложных задач</li>
+                <li>Наличие запчастей, а при необходимости срочная поставка уменьшают потери заказчика, связанные с простоем спецтехники</li>
+            </ul>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <div class="w-container">
+            <h2 class="services-header">Наши услуги по ремонту гидравлики</h2>
+            <div class="services-block w-row">
+                <div class="w-clearfix w-col w-col-4">
+                    <div class="services-block-item">
+                        <img alt="" class="service-block-item-image" src="{% static 'images/pump.png' %}">
+                        <h3 class="services-block-item-text"><a href="ремонт-гидронасоса">Ремонт гидронасосов</a></h3>
+                    </div>
+                </div>
+                <div class="w-clearfix w-col w-col-4">
+                    <div class="services-block-item">
+                        <img alt="" class="service-block-item-image" src="{% static 'images/motor.png' %}">
+                        <h3 class="services-block-item-text"><a href="ремонт-гидромотора">Ремонт гидромоторов</a></h3>
+                    </div>
+                </div>
+                <div class="w-clearfix w-col w-col-4">
+                    <div class="services-block-item">
+                        <img alt="" class="service-block-item-image" src="{% static 'images/cilinder.png' %}">
+                        <h3 class="services-block-item-text"><a href="ремонт-гидроцилиндров">Ремонт гидроцилиндров</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="services-block w-row">
+                <div class="w-clearfix w-col w-col-4">
+                    <div class="services-block-item">
+                        <img alt="" class="service-block-item-image" src="{% static 'images/valve.png' %}">
+                        <h3 class="services-block-item-text"><a href="ремонт-гидрораспределителей/">Ремонт распределителей</a></h3>
+                    </div>
+                </div>
+                <div class="w-clearfix w-col w-col-4">
+                    <div class="services-block-item">
+                        <img alt="" class="service-block-item-image" src="{% static 'images/weld.png' %}">
+                        <h3 class="services-block-item-text">Сварочные работы</h3>
+                    </div>
+                </div>
+                <div class="w-clearfix w-col w-col-4">
+                    <div class="services-block-item">
+                        <img alt="" class="service-block-item-image" src="{% static 'images/tokar.png' %}">
+                        <h3 class="services-block-item-text">Токарные работы</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
